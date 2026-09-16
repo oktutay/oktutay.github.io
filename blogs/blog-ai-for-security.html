@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Why I work on AI for security - the first post on Dao Anh Tu's blog.">
+  <meta name="author" content="Dao Anh Tu">
+  <title>Why I work on AI for security - Dao Anh Tu</title>
+  <link rel="icon" href="../navicon.png">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">☰</button>
+      <nav class="nav" id="nav">
+        <a href="../index.html">About</a>
+        <a href="../skills.html">Skills</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../awards.html">Awards</a>
+        <a href="../colleagues.html">Colleagues</a>
+        <a href="../blog.html" aria-current="page">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="post">
+      <div class="container post-body">
+        <a class="text-link back-link" href="../blog.html">← Back to Blog</a>
+        <p class="section-label">2026.09.16</p>
+        <h2>Why I work on AI for security</h2>
+        <div class="prose">
+          <p>
+            I came to security the practical way. During my internship at VNPT Cyber
+            Immunity I spent months reproducing the same families of bugs over and over -
+            SQL injection, XSS, CSRF, path traversal, insecure deserialization, broken
+            access control - writing up each one so someone else could reproduce it too.
+            That work teaches you something that no course does: most of the effort is not
+            finding the bug, it is explaining it well enough that a person will act on it.
+          </p>
+          <p>
+            That is also what pulled me toward AI. A malware classifier that says
+            "malicious, 0.94" is nearly useless to a tier-2 analyst. They need to know
+            which parts of the binary drove the verdict, whether the model has seen
+            anything like it before, and whether its answer still holds now that the
+            malware has evolved. Those are the two problems I keep coming back to:
+            <strong>robustness under concept drift</strong>, and <strong>explanations
+            grounded in the model's own evidence</strong> rather than a plausible story
+            generated after the fact. They are the core of LLMal, the paper I worked on
+            this year, and of MalEvo, the platform we built from it.
+          </p>
+          <p>
+            The other half of my work is making these systems usable. BAIStudio came out
+            of watching non-technical people bounce off AI tooling that assumed they
+            already knew what a pipeline was. Building it taught me that a good interface
+            is not decoration on top of a model - it decides whether the model gets used
+            at all.
+          </p>
+          <p>
+            I plan to write here about what I learn along the way: notes on graph-based
+            malware analysis, things that surprised me while testing web applications, and
+            the occasional post-mortem on a project that did not work. If any of it is
+            useful to you, or wrong, I would like to hear about it.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© 2026 Dao Anh Tu</span>
+      <span>Built with Luv · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+</body>
+</html>

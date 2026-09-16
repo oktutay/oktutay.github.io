@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Selected projects of Vu Van An.">
-  <meta name="author" content="Vu Van An">
-  <title>Projects - Vu Van An</title>
+  <meta name="description" content="Selected projects of Dao Anh Tu - malware analysis platforms, AI workflow tooling, and IoT security.">
+  <meta name="author" content="Dao Anh Tu">
+  <title>Projects - Dao Anh Tu</title>
   <link rel="icon" href="navicon.png">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -29,39 +29,65 @@
   <main>
     <section class="alt-section" id="projects">
       <div class="container">
-        <!-- <p class="section-label">PROJECTS</p> -->
         <div class="section-heading">
-          <h2>Active projects</h2>
-          <a class="text-link" href="https://github.com/AnVuVa" target="_blank" rel="noreferrer">All GitHub projects ↗</a>
+          <h2>Projects</h2>
+          <a class="text-link" href="https://github.com/oktutay" target="_blank" rel="noreferrer">All GitHub projects ↗</a>
         </div>
         <div class="project-grid">
           <article class="project-card">
-            <div class="project-top"><span>BIOTECHNOLOGY</span><span>ACTIVE</span></div>
-            <h3>Spatial Transcriptomics</h3>
+            <div class="project-top"><span>RESEARCH</span><span>UNDER REVIEW</span></div>
+            <h3>LLMal - Malware Family Classification</h3>
             <p>
-              Predicting spatial gene expression from histology images with
-              biology-guided, local-global residual propagation.
+              A graph-and-LLM framework for Portable Executable malware family
+              classification that stays accurate under concept drift and explains
+              each verdict from the classifier's own evidence.
             </p>
-            <div class="tags"><span>Biotechnology</span><span>Computational Pathology</span></div>
+            <div class="tags"><span>Malware Classification</span><span>GNN</span><span>Explainable AI</span></div>
           </article>
           <article class="project-card">
-            <div class="project-top"><span>3D VISION</span><span>ACTIVE</span></div>
-            <h3>Endoscopic 3D Gaussian Splatting</h3>
+            <div class="project-top"><span>AI TOOLING</span><span>SHIPPED</span></div>
+            <h3>BAIStudio - AI Workflow Platform</h3>
             <p>
-              Reconstructing dynamic, deformable endoscopic scenes with
-              3D Gaussian Splatting.
+              A no-code/low-code platform that lets technical and non-technical users
+              design, customise, and run end-to-end AI workflows. Inspired by tools
+              like n8n, but with a guided interface that cuts configuration complexity.
+              <a class="inline-link" href="https://github.com/oktutay/BAIStudio" target="_blank" rel="noreferrer">oktutay/BAIStudio ↗</a>
             </p>
-            <div class="tags"><span>3DGS</span><span>Endoscopy</span></div>
+            <div class="tags"><span>LLM</span><span>Multi-Agent</span><span>No-Code</span></div>
           </article>
           <article class="project-card">
-            <div class="project-top"><span>BIOMETRICS</span><span>ACTIVE</span></div>
-            <h3>Fingerprint Recognition</h3>
+            <div class="project-top"><span>SECURITY</span><span>SHIPPED</span></div>
+            <h3>MalEvo - AI Malware Analysis Platform</h3>
             <p>
-              Unified fingerprint recognition and presentation attack detection,
-              identity-aware latent fingerprint restoration, and fast large-scale
-              identification with minutiae-free graph transformers.
+              An automated tier-2 static analysis workflow for SOC analysts, combining
+              GNN-based family classification, MITRE ATT&amp;CK mapping, model-grounded
+              explanations, and zero-day variant signaling. Classifies six malware
+              families at 97.71% F1 (10-fold) in roughly 12 seconds per file, with no
+              GPU or sandbox required.
+              <a class="inline-link" href="https://github.com/Hibiscus-Company/MalEvo" target="_blank" rel="noreferrer">Hibiscus-Company/MalEvo ↗</a>
             </p>
-            <div class="tags"><span>Biometrics</span><span>Security</span></div>
+            <div class="tags"><span>Malware</span><span>GNN</span><span>MITRE ATT&amp;CK</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>SECURITY</span><span>ARCHIVED</span></div>
+            <h3>SimuGuard - Malware Simulation &amp; Defence</h3>
+            <p>
+              A platform for simulating and analysing realistic cyberattack scenarios,
+              then recommending personalised protection against common malware. Included
+              a set of security "vaccine" modules hardened through iterative testing.
+              <a class="inline-link" href="https://github.com/oktutay/SimuGuard" target="_blank" rel="noreferrer">oktutay/SimuGuard ↗</a>
+            </p>
+            <div class="tags"><span>Malware</span><span>Simulation</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>IOT</span><span>ARCHIVED</span></div>
+            <h3>Personal SmartCard</h3>
+            <p>
+              An IoT project built around NFC-A (ISO/IEC 14443A) after surveying the
+              available smart card standards, paired with a personal web interface and
+              refined through several rounds of testing.
+            </p>
+            <div class="tags"><span>IoT</span><span>NFC</span></div>
           </article>
         </div>
       </div>
@@ -70,7 +96,7 @@
 
   <footer>
     <div class="container footer-wrap">
-      <span>© 2026 Vu Van An</span>
+      <span>© 2026 Dao Anh Tu</span>
       <span>Built with Luv · Hosted on GitHub Pages</span>
     </div>
   </footer>

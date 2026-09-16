@@ -1,63 +1,60 @@
-# Researcher Website
+# Dao Anh Tu - Personal Website
 
-A clean, responsive academic/researcher portfolio designed for GitHub Pages.
+Personal portfolio for Dao Anh Tu (`oktutay`) - Computer Science student at SoICT, Hanoi
+University of Science and Technology, working on AI in Security.
 
-## 1. Replace placeholders
+Static HTML/CSS/JS. No build step, no dependencies, no framework.
 
-Search the project for:
+## Structure
 
-- `Your Name`
-- `YOUR_USERNAME`
-- `your.email@example.com`
-- `Your University`
-- `Your Lab`
-- publication titles/authors/venues
-- project links
-- social links
+| File | Contents |
+| --- | --- |
+| `index.html` | Hero, research interests, CV download, contact, recent updates |
+| `skills.html` | Technical skills, experience, education |
+| `publications.html` | Papers and work in preparation |
+| `projects.html` | Research and engineering projects |
+| `awards.html` | Competition results, certifications, earlier achievements |
+| `colleagues.html` | Hibiscus Company, teams and labs, communities |
+| `blog.html` | Blog index and photo gallery |
+| `blogs/` | Individual blog posts |
+| `style.css` | All styling. Theme variables live in `:root` at the top |
+| `script.js` | Mobile nav toggle and the image lightbox |
 
-## 2. Add your CV
+The header and footer are **duplicated in every HTML file** - there is no templating.
+If you change the nav or footer, change it in all 8 pages.
 
-Put your PDF here:
+## Assets
 
-`assets/CV.pdf`
-
-The CV button already points to that path.
-
-## 3. Add a profile photo
-
-Replace the `avatar-placeholder` in `index.html` with:
-
-```html
-<img class="avatar" src="assets/profile.jpg" alt="Your Name">
+```
+assets/avatar.jpg        Hero portrait (4:5, 900x1125)
+assets/DaoAnhTu_CV.pdf   Linked from the "Download CV" button on index.html
+assets/BaiStudio/        SCIC 2026 Q1 award photos + demo screenshot
+assets/MalEvo/           SCIC 2026 Q2 award photos + product screenshots
+assets/VAR/              Viettel AI Race 2026 photo
+assets/HibiscusCo/       Hibiscus Company members photo
+assets/Gallery/          Event photos shown on blog.html
+navicon.png              Favicon
 ```
 
-Then add the image as `assets/profile.jpg`.
+To swap the CV, overwrite `assets/DaoAnhTu_CV.pdf` - the link in `index.html` does not
+need to change.
 
-## 4. Deploy
+## Run locally
 
-Create a public repository named:
+```bash
+python -m http.server 8000
+```
 
-`YOUR_USERNAME.github.io`
+Then open http://localhost:8000
 
-Copy these files into the repository, commit, and push.
+## Deploy
 
-Then enable:
+GitHub Pages serves this from the repository root via `.github/workflows/jekyll-gh-pages.yml`
+on every push to `main`. Settings → Pages → Deploy from a branch → `main` → `/ (root)`.
 
-Settings → Pages → Deploy from a branch → main → / (root)
+## Open TODOs
 
-Your site will be available at:
+Search the project for `TODO:` - currently:
 
-`https://YOUR_USERNAME.github.io`
-
-## 5. Recommended next customization
-
-For a real academic website, replace the sample publication/project entries with your actual:
-
-- Publications
-- Preprints
-- Code repositories
-- Google Scholar
-- ORCID
-- CV
-- News
-- Research interests
+- Full author list for the LLMal paper on `publications.html`
+- A Viettel AI Race photo that you are in, on `awards.html`
