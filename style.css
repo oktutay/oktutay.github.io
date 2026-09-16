@@ -228,9 +228,10 @@ section { padding: 105px 0; }
   font-size: 27px;
   margin: 0 0 13px;
   letter-spacing: -.025em;
+  color: #f4f4f1;
 }
 
-.research-card p { color: #aaa; }
+.research-card p { color: #c4c4c0; }
 
 .tags { display: flex; gap: 8px; margin-top: 24px; flex-wrap: wrap; }
 .tags span {
@@ -497,11 +498,70 @@ body.lightbox-open { overflow: hidden; }
 
 .block + .block { margin-top: 90px; }
 
-.entry { grid-template-columns: 150px 1fr; }
+.entry { grid-template-columns: 220px 1fr; }
 .entry h3 { margin: 0; font-size: 19px; letter-spacing: -.01em; }
 .entry .org { color: var(--muted); font-size: 14px; margin: 2px 0 10px; }
 .entry ul { margin: 0; padding-left: 18px; color: #555; }
 .entry li + li { margin-top: 4px; }
+
+.experience-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.company-logo-vci-image {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.experience-role {
+  position: relative;
+  margin: 22px 0 0 8px;
+  padding: 0 0 0 22px;
+  border-left: 2px solid #d7d7d2;
+}
+.company-heading { display: flex; align-items: center; gap: 14px; }
+.company-heading h3 { margin: 0; }
+.company-heading .org { margin-bottom: 0; }
+.company-logo {
+  display: grid;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 10px;
+  background: #14235f;
+  color: #8fe8ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+.company-logo-hibiscus { background: #fff1e4; color: #d14e1e; font-size: 24px; }
+.company-logo-vci { background: #101c68; color: #69e2ff; }
+.company-logo-image {
+  display: block;
+  flex: 0 0 auto;
+  width: 210px;
+  max-width: 210px;
+  height: 72px;
+  object-fit: contain;
+  object-position: left center;
+  border-radius: 0;
+  background: transparent;
+}
+.company-logo-hibiscus-image { max-width: 210px; }
+.experience-role::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #b8b8b3;
+}
+.experience-role h4 { margin: 0; font-size: 17px; }
+.experience-role p { margin: 4px 0 0; color: #555; }
+.experience-role .role-meta { color: var(--muted); font-size: 14px; }
+.experience-role .role-focus { font-weight: 700; color: var(--text); }
 
 .cv-section {
   display: flex;
