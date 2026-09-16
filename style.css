@@ -505,13 +505,6 @@ body.lightbox-open { overflow: hidden; }
 .entry li + li { margin-top: 4px; }
 
 .experience-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
-.company-logo-vci-image {
-  display: block;
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-  border-radius: 10px;
-}
 .experience-role {
   position: relative;
   margin: 22px 0 0 8px;
@@ -521,33 +514,29 @@ body.lightbox-open { overflow: hidden; }
 .company-heading { display: flex; align-items: center; gap: 14px; }
 .company-heading h3 { margin: 0; }
 .company-heading .org { margin-bottom: 0; }
-.company-logo {
-  display: grid;
-  flex: 0 0 48px;
-  width: 48px;
-  height: 48px;
-  place-items: center;
-  border-radius: 10px;
-  background: #14235f;
-  color: #8fe8ff;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .04em;
-}
-.company-logo-hibiscus { background: #fff1e4; color: #d14e1e; font-size: 24px; }
-.company-logo-vci { background: #101c68; color: #69e2ff; }
+/* The source logos differ in shape and in how much padding each file bakes in,
+   so a single shared height makes them look mismatched. Cap width and height
+   per shape instead, tuned so all three read at about the same visual weight. */
 .company-logo-image {
   display: block;
   flex: 0 0 auto;
-  width: 210px;
-  max-width: 210px;
-  height: 72px;
+  width: auto;
+  max-width: 190px;
+  height: auto;
+  max-height: 44px;
   object-fit: contain;
   object-position: left center;
-  border-radius: 0;
   background: transparent;
 }
-.company-logo-hibiscus-image { max-width: 210px; }
+/* Square marks: taller, since their glyphs only fill the middle of the frame.
+   The solid plate also needs rounding so it reads as a badge, not a raw crop. */
+.company-logo-square {
+  max-width: 64px;
+  max-height: 64px;
+  border-radius: 12px;
+}
+/* This wordmark carries generous internal padding, so let it run taller. */
+.company-logo-hibiscus-image { max-height: 56px; }
 .experience-role::before {
   content: "";
   position: absolute;
