@@ -525,7 +525,7 @@ body.lightbox-open { overflow: hidden; }
   height: auto;
   max-height: 44px;
   object-fit: contain;
-  object-position: left center;
+  /* object-position: left center; */
   background: transparent;
 }
 /* Square marks: taller, since their glyphs only fill the middle of the frame.
