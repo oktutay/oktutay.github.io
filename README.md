@@ -30,7 +30,9 @@ assets/avatar.jpg        Hero portrait (4:5, 900x1125)
 assets/DaoAnhTu_CV.pdf   Linked from the "Download CV" button on index.html
 assets/BaiStudio/        SCIC 2026 Q1 award photos + demo screenshot
 assets/MalEvo/           SCIC 2026 Q2 award photos + product screenshots
-assets/VAR/              Viettel AI Race 2026 photo
+assets/VAR/              Viettel AI Race 2026 photos
+assets/VLSP/             VLSP 2026 competition award certificates
+assets/OlpAI/            OlpAI'26 Northern Region photos
 assets/HibiscusCo/       Hibiscus Company members photo
 assets/Gallery/          Event photos shown on blog.html
 navicon.png              Favicon
@@ -57,4 +59,3 @@ on every push to `main`. Settings → Pages → Deploy from a branch → `main` 
 Search the project for `TODO:` - currently:
 
 - Full author list for the LLMal paper on `publications.html`
-- A Viettel AI Race photo that you are in, on `awards.html`
